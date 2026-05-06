@@ -10,7 +10,7 @@ if st.button("Generate QR"):
     qr.save("qr.png")
 
     img=Image.open("qr.png")
-    st..image(img,caption="Generated QR code")
+    st.image(img,caption="Generated QR code")
 
     with open("qr..png","rb") as f:
       st.download_button("Download QR", f,file_name="qr.png")
